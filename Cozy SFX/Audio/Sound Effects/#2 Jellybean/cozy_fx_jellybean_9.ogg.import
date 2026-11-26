@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://8ev64qwli3go"
+path="res://.godot/imported/cozy_fx_jellybean_9.ogg-eb511942602cd89bd4456566d6a591e1.oggvorbisstr"
+
+[deps]
+
+source_file="res://Cozy SFX/Audio/Sound Effects/#2 Jellybean/cozy_fx_jellybean_9.ogg"
+dest_files=["res://.godot/imported/cozy_fx_jellybean_9.ogg-eb511942602cd89bd4456566d6a591e1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

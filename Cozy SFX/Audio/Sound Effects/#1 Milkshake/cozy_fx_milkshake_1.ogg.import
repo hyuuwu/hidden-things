@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://8qam7pow23gk"
+path="res://.godot/imported/cozy_fx_milkshake_1.ogg-8c35727e2f2b603ab423145b9273c84a.oggvorbisstr"
+
+[deps]
+
+source_file="res://Cozy SFX/Audio/Sound Effects/#1 Milkshake/cozy_fx_milkshake_1.ogg"
+dest_files=["res://.godot/imported/cozy_fx_milkshake_1.ogg-8c35727e2f2b603ab423145b9273c84a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

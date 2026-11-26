@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://6w2jj65mycee"]
+
+[ext_resource type="Script" uid="uid://b0yatvhpa4vaq" path="res://intro.gd" id="1_7a8ye"]
+[ext_resource type="FontFile" uid="uid://b3hxrn0sfxad1" path="res://Pixel Digivolve.otf" id="2_0a7ni"]
+[ext_resource type="AudioStream" uid="uid://ctjmnd026blij" path="res://Cozy SFX/Audio/Sound Effects/#2 Jellybean/cozy_fx_jellybean_11.ogg" id="3_y72e6"]
+[ext_resource type="AudioStream" uid="uid://6essqr3fkwxb" path="res://dragon-studio-winter-wind-402331.mp3" id="4_0a7ni"]
+
+[node name="Node2D" type="Node2D" unique_id=1415124975]
+script = ExtResource("1_7a8ye")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1847474845]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.08627451, 0.08627451, 0.11372549, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1624236342]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -52.0
+offset_top = 295.0
+offset_right = 1263.0
+offset_bottom = 492.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_0a7ni")
+theme_override_font_sizes/normal_font_size = 25
+text = "In a very, very small town away..."
+autowrap_mode = 0
+tab_size = 8
+horizontal_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1669593857]
+stream = ExtResource("3_y72e6")
+
+[node name="shhhhhhhhhhhh" type="AudioStreamPlayer" parent="." unique_id=56712986]
+stream = ExtResource("4_0a7ni")
+autoplay = true
+parameters/looping = true
+
+[node name="timesmthsmthssd" type="Timer" parent="." unique_id=205871980]
+wait_time = 0.027
+
+[node name="Button" type="Button" parent="." unique_id=1304786350]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 533.5
+offset_top = 364.0
+offset_right = 618.5
+offset_bottom = 392.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_0a7ni")
+text = "WAKE UP!"
+
+[connection signal="timeout" from="timesmthsmthssd" to="." method="_on_timesmthsmthssd_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

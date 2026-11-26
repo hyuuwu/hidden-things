@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dcwrgx41d0lkn"
+path="res://.godot/imported/cozy_fx_crumbs_15.ogg-746229abd2529429d10d93eaa600686c.oggvorbisstr"
+
+[deps]
+
+source_file="res://Cozy SFX/Audio/Sound Effects/#3 Crumbs/cozy_fx_crumbs_15.ogg"
+dest_files=["res://.godot/imported/cozy_fx_crumbs_15.ogg-746229abd2529429d10d93eaa600686c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
