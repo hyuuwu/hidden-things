@@ -5,16 +5,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c2dbr"]
 size = Vector2(63, 20)
 
-[node name="interacting yadayadayada" type="Node2D" unique_id=1397164099]
-
-[node name="interactablepart" type="Area2D" parent="." unique_id=1929532348]
-collision_layer = 0
-collision_mask = 2
+[node name="interactablepart" type="Area2D" unique_id=1635394599]
 script = ExtResource("1_qmbx2")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="interactablepart" unique_id=26687982]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=614909228]
 position = Vector2(112.5, 37)
 shape = SubResource("RectangleShape2D_c2dbr")
-
-[connection signal="area_entered" from="interactablepart" to="interactablepart" method="_on_area_entered"]
-[connection signal="body_exited" from="interactablepart" to="interactablepart" method="_on_body_exited"]

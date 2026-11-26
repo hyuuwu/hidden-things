@@ -15,6 +15,11 @@ run/main_scene="uid://biqser2ql03t6"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SceneTransition="*uid://ccmmx8m7f18jr"
+Autolod="*uid://d03khgov15p31"
+
 [display]
 
 window/stretch/mode="canvas_items"
@@ -23,6 +28,10 @@ window/stretch/aspect="expand"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
+
+[global_group]
+
+player=""
 
 [input]
 

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://ccmmx8m7f18jr"]
+
+[ext_resource type="Script" uid="uid://l21qv5jb36bk" path="res://scene_transition.gd" id="1_1id5y"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=486499013]
+layer = 100
+script = ExtResource("1_1id5y")
+
+[node name="FadeRect" type="ColorRect" parent="." unique_id=1916064924]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
