@@ -1,0 +1,223 @@
+[gd_scene format=3 uid="uid://c8grfkgmcc6te"]
+
+[ext_resource type="Script" uid="uid://i024q8v1mkxw" path="res://character_body_2d.gd" id="1_qloew"]
+[ext_resource type="Texture2D" uid="uid://df0niwoocg3lm" path="res://sprites from eris esra tysm/16x16/16x16 Idle-Sheet.png" id="2_rwb4t"]
+[ext_resource type="Texture2D" uid="uid://d2f4kbf4lw5eb" path="res://sprites from eris esra tysm/16x16/16x16 Walk-Sheet.png" id="3_1v00j"]
+[ext_resource type="FontFile" uid="uid://b3hxrn0sfxad1" path="res://Pixel Digivolve.otf" id="4_rwb4t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mnpky"]
+atlas = ExtResource("2_rwb4t")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tma5p"]
+atlas = ExtResource("2_rwb4t")
+region = Rect2(24, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aq4ac"]
+atlas = ExtResource("2_rwb4t")
+region = Rect2(72, 96, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xu13d"]
+atlas = ExtResource("3_1v00j")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u3icf"]
+atlas = ExtResource("3_1v00j")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cuu4a"]
+atlas = ExtResource("3_1v00j")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfmxy"]
+atlas = ExtResource("3_1v00j")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l262f"]
+atlas = ExtResource("3_1v00j")
+region = Rect2(0, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fputw"]
+atlas = ExtResource("3_1v00j")
+region = Rect2(0, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ekqhg"]
+atlas = ExtResource("3_1v00j")
+region = Rect2(24, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_olu43"]
+atlas = ExtResource("3_1v00j")
+region = Rect2(48, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w5oa7"]
+atlas = ExtResource("3_1v00j")
+region = Rect2(72, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4y8sd"]
+atlas = ExtResource("3_1v00j")
+region = Rect2(0, 72, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rvkpk"]
+atlas = ExtResource("3_1v00j")
+region = Rect2(24, 72, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_md8dm"]
+atlas = ExtResource("3_1v00j")
+region = Rect2(48, 72, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wy1l4"]
+atlas = ExtResource("3_1v00j")
+region = Rect2(72, 72, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hhwgs"]
+atlas = ExtResource("3_1v00j")
+region = Rect2(72, 96, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f0ocn"]
+atlas = ExtResource("3_1v00j")
+region = Rect2(48, 96, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yopyy"]
+atlas = ExtResource("3_1v00j")
+region = Rect2(24, 96, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q45tq"]
+atlas = ExtResource("3_1v00j")
+region = Rect2(0, 96, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2sw64"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mnpky")
+}],
+"loop": 1,
+"name": &"idle_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tma5p")
+}],
+"loop": 1,
+"name": &"idle_side",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aq4ac")
+}],
+"loop": 1,
+"name": &"idle_up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xu13d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u3icf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cuu4a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qfmxy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l262f")
+}],
+"loop": 1,
+"name": &"walk_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fputw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ekqhg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_olu43")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w5oa7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4y8sd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rvkpk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_md8dm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wy1l4")
+}],
+"loop": 1,
+"name": &"walk_side",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hhwgs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f0ocn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yopyy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q45tq")
+}],
+"loop": 1,
+"name": &"walk_up",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ymkym"]
+radius = 8.0
+height = 22.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_cuu4a"]
+font_size = 8
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=525371936 groups=["player"]]
+motion_mode = 1
+script = ExtResource("1_qloew")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=718454647]
+sprite_frames = SubResource("SpriteFrames_2sw64")
+animation = &"idle_up"
+
+[node name="colision" type="CollisionShape2D" parent="." unique_id=1611212258]
+position = Vector2(0, 4)
+shape = SubResource("CapsuleShape2D_ymkym")
+
+[node name="camera duh" type="Camera2D" parent="." unique_id=1613754051]
+zoom = Vector2(5.79, 5.79)
+
+[node name="day xyz" type="Label" parent="." unique_id=1227468920]
+texture_filter = 3
+offset_left = -99.0
+offset_top = -56.0
+offset_right = -49.0
+offset_bottom = -36.0
+theme_override_fonts/font = ExtResource("4_rwb4t")
+text = "Day 0"
+label_settings = SubResource("LabelSettings_cuu4a")
+metadata/_edit_use_anchors_ = true
+
+[node name="CanvasGroup" type="CanvasLayer" parent="." unique_id=1733852594]
+
+[node name="VirtualJoystick" type="VirtualJoystick" parent="CanvasGroup" unique_id=1481772265]
+offset_left = -87.0
+offset_top = 37.0
+offset_right = -47.0
+offset_bottom = 77.0
+scale = Vector2(0.19180511, 0.18214424)
+joystick_size = 123.0
+tip_size = 90.0

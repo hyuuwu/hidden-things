@@ -11,3 +11,13 @@ script = ExtResource("1_qmbx2")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=614909228]
 position = Vector2(112.5, 37)
 shape = SubResource("RectangleShape2D_c2dbr")
+
+[node name="Label" type="Label" parent="." unique_id=431837229]
+visible = false
+texture_filter = 1
+offset_left = 92.0
+offset_top = 19.0
+offset_right = 136.0
+offset_bottom = 42.0
+theme_override_font_sizes/font_size = 5
+text = "press e to interact"

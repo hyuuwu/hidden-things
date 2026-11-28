@@ -2,13 +2,21 @@ extends CanvasLayer
 
 @onready var fade_rect: ColorRect = $FadeRect
 var is_transitioning: bool = false
+@onready var music: AudioStreamPlayer = $AudioStreamPlayer
 
-func change_scene(target_scene_path: String, duration: float = 0.4) -> void:
+func change_scene(target_scene_path: String, duration: float = 0.4, audio: String = "") -> void:
 	if is_transitioning:
 		return
 	is_transitioning = true
 	
 	# Fade to black
+	if audio != "":
+		music.stream = load(audio)
+		music.play()
+	else:
+		pass
+		
+		
 	var tween := create_tween()
 	tween.tween_property(fade_rect, "color:a", 1.0, duration)
 	await tween.finished

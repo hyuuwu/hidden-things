@@ -29,6 +29,7 @@ func save_game():
 	
 func load_game():
 	var err = config.load(plzwork)
+	print("LOAD ERR: ", err, " PATH: ", ProjectSettings.globalize_path(plzwork))
 	if err != OK:
 		save_game()
 		return
@@ -37,9 +38,28 @@ func load_game():
 		init_data[key] = config.get_value("init", key, init_data[key])
 	for key in itens:
 		itens[key] = config.get_value("items", key, itens[key])
+	print("LOADED INIT_DATA: ", init_data)
 
 #por aq chega ne
 # ah sim, easter ovos
 func _comentario_foda():
-	pass
-		
+	var file = FileAccess.open(plzwork, FileAccess.READ)
+	if file == null:
+		return
+	var text = file.get_as_text()
+	file.close()
+	
+	var target = "_hidden = " + str(itens["_hidden"])
+	var replace = target + " # u found the hidden item! now edit it to 100% the game!!!"
+	text = text.replace(target, replace)
+	
+	file = FileAccess.open(plzwork, FileAccess.WRITE)
+	file.store_string(text)
+	file.close()
+func unlock_item(item_id: String):
+	if itens.has(item_id):
+		itens[item_id] = 1
+		save_game() 
+	
+func _ready() -> void:
+	load_game()

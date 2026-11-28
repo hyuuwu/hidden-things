@@ -12,16 +12,18 @@ func _on_body_entered(body: Node2D) -> void:
 	#print("Entered area: ", body.name, " | In player group: ", body.is_in_group("player"))
 	if body.is_in_group("player"):
 		player_in_range = true
+		$Label.show()
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("interact"):
 		#print("Interact pressed! In range: ", player_in_range, " | Next scene: ", next_scene)
 		if player_in_range and next_scene != "":
-			SceneTransition.change_scene(next_scene)
+			SceneTransition.change_scene(next_scene, 0.4, "res://fnaf-phone-ringing-sound.mp3")
 
 
 func _on_body_exited(body: Node2D) -> void:
 	if body.is_in_group("player"):
+		$Label.hide()
 		player_in_range = false
 
 #func _unhandled_input(event: InputEvent) -> void:
